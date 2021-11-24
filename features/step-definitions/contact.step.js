@@ -11,4 +11,7 @@ Given(/^I am on the contact page$/, async () => {
 
 Given(/^I send refund request to customer care for prev. order$/, async () => {
     await contactPage.sendMessageToCustomerCare();
+
+
+
 });
