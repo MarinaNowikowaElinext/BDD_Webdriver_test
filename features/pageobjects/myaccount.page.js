@@ -50,17 +50,14 @@ class MyAccount {
         const companyAddress = await this.txtAddressCompany.getText();
         const address1 = await this.txtAddress1.getText();
         const address2 = await this.txtAddress2.getText();
-
         await expect(name).toBe(
             dynamicData.address.firstName +
             " " +
             dynamicData.address.lastName
         );
-
         await expect(companyAddress).toBe(dynamicData.address.company);
         await expect(address1).toBe(dynamicData.address.address1);
         await expect(address2).toBe(dynamicData.address.address2);
     };
 }
-
 export const myAccount = new MyAccount();

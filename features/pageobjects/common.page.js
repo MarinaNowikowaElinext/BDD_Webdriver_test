@@ -17,6 +17,4 @@ class CommonPage {
        await expect(await headingTitle.getText()).toEqual(title);
     };
 }
-
-
 export const commonPage = new CommonPage();

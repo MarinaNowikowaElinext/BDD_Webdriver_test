@@ -179,6 +179,4 @@ class AuthPage {
         console.log("Logout success !!");
     };
 }
-
-
 export const authPage = new AuthPage();
